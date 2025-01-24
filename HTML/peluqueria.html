@@ -2,10 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Conexion con el CSS-->
-<link rel="stylesheet" href="../CSS/style.css">
+<!-- Conexion con el CSS-->
+<link rel="stylesheet" href="../styles.css">
+
 <!--Conexion con Fuente de Letra-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,30 +16,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-<title>Vale Nails - Peluquería</title>
-</head>
+<!-- Boostrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<body>
-    <header class="Portada">
-        <img src="../Multimedia/PortadaValeNails.jpg" alt="Portada Vale Nails">
-        <nav>
-            <ul class="ListNav">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="maincuria.html">Manicuría</a>
-                </li>
-                <li>
-                    <a href="pedicuria.html">Pedicuría</a>
-                </li>
-                <li>
-                    <a href="peluqueria.html">Peluquería</a>
-                </li>
-                <li>
-                    <a href="nailart.html">Arte de Uñas</a>
-                </li>
-            </ul>
+<title>Vale Nails - Peluquería</title>
+
+</head>
+<body class="custom-body">
+    <header class="d-flex flex-column align-items-center custom-header">
+        <img src="../Multimedia/PortadaValeNails.png" class="img-fluid" alt="Portada Vale Nails">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-evenly">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="peluqueria.html">Peluquería</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="maincuria.html">Manicuría</a>
+                        <a class="nav-link" href="pedicuria.html">Pedicuría</a>
+                        <a class="nav-link" href="nailart.html">Arte de Uñas</a>
+                    </div>
+                </div>
+            </div>
         </nav>
         <h1 class="TituloPag">PELUQUERÍA</h1>
         <h2 class="SubPag">Servicios para el cuidado y embellecimiento de tu cabello</h2>
@@ -118,5 +119,8 @@
         <p>© 2024 Vale Nails - Todos los derechos reservados</p>
         <img src="../Multimedia/LogoValeNails.jpg" alt="Logo ValeNails">
     </footer>
+
+    <!-- Boostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
