@@ -1,0 +1,45 @@
+/*MediaQuery para COMPUTADORAS*/
+
+@media (min-width: 1024px) {
+    #TituloIndex {
+        width: 100%;
+        text-align: center;
+        font-size: 100px;
+        font-weight: normal;
+    }
+
+    .FooterGeneral img{
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .MainPredH {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px;
+    }
+
+    .MainPredH img{
+        height: 280px;
+        width: 280px;
+    }
+
+    .MainPredV {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .MainPredV img {
+        height: 450px;
+        width: 450px;
+    }
+
+
+    .custom-body header img {
+    height: 400px;
+    width: 800px;
+    }
+}

@@ -1,0 +1,30 @@
+/*Estilos para Titulos de las paginas (Mobile)*/
+
+/*Titulo de Index*/
+#TituloIndex {
+    @extend .titulos;
+    font-size: 4.7vh;
+    padding: 40px 0;
+}
+
+/*Titulo y Subtitulo de las Paginas de Servicios (No se usa para Index)*/
+.TituloPag {
+    @extend .titulos;
+    font-size: 6vh;
+    padding: 3vh 0;
+}
+
+.SubPag {
+    @extend .titulos;
+    font-size: 3vh;
+}
+
+//@extend's
+.titulos{
+    margin: 0;
+    width: 100%;
+    font-weight: bold;
+    background-color: $primary-color;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}

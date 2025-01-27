@@ -1,0 +1,23 @@
+/*Estilos 'Customizados' del Sitio web*/
+
+.custom-body{
+    background-color: $primary-color;
+}
+
+.custom-header{
+    background-color: $secondary-color;
+}
+
+.custom-main article a img{
+    height: 35vh;
+    width: 35vh;
+    padding-bottom: 3vh;
+    transition: height 1.5 ease, width 1.5 ease;
+}
+
+.custom-main article h2 a{
+    color: #825B32;
+    font-size: 4vh;
+    text-decoration: none;
+    transition: color 1.5 ease, font-size 1.5 ease;
+}

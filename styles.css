@@ -1,268 +1,264 @@
 @charset "UTF-8";
-/*General para todas las paginas*/
+/*Uso general para todas las paginas*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .FooterGeneral {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    background-image: radial-gradient(circle, #e4bca4, #d19676);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  background-image: radial-gradient(circle, #e4bca4, #d19676);
 }
 
 .FooterGeneral img {
-    height: 4vh;
-    width: 4vh;
-    transition: transform 1.5 ease-in 0.5;
+  height: 4vh;
+  width: 4vh;
+  transition: transform 1.5 ease-in 0.5;
 }
 
+/*Estilos para Titulos de las paginas (Mobile)*/
 /*Titulo de Index*/
 #TituloIndex {
-    margin: 0;
-    text-align: center;
-    font-size: 4.7vh;
-    font-weight: bold;
-    padding: 40px 0;
-    width: 100%;
-    font-family: "Dancing Script", cursive;
-    background-color: #EDCDBB;
-}
-
-/*Main de Elementos alineados Horizontalmente (Index, NailArt y Peluquería)*/
-.MainPredH {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.MainPredH img {
-    max-width: 100%;
-    height: 45vh;
-    padding: 25px;
-    margin-top: 40px;
+  font-size: 4.7vh;
+  padding: 40px 0;
 }
 
 /*Titulo y Subtitulo de las Paginas de Servicios (No se usa para Index)*/
 .TituloPag {
-    text-align: center;
-    font-size: 6vh;
-    font-weight: bold;
-    margin: 0;
-    width: 100%;
-    padding: 3vh 0;
-    font-family: "Dancing Script", cursive;
-    background-color: #EDCDBB;
+  font-size: 6vh;
+  padding: 3vh 0;
 }
 
 .SubPag {
-    background-color: #EDCDBB;
-    font-size: 3vh;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
+  font-size: 3vh;
 }
 
-/*Main que se usará en las páginas de SPA (Manicure y Pedicure) (<main>)*/
-.MainPredV {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px;
-    margin-top: 3vh;
-    font-family: "Oswald", sans-serif;
-    font-size: 3vh;
+.titulos, #TituloIndex, .TituloPag, .SubPag {
+  margin: 0;
+  width: 100%;
+  font-weight: bold;
+  background-color: #EDCDBB;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
 }
 
-.MainPredV img {
-    padding-bottom: 2vh;
-    height: 25vh;
-    max-width: 100%;
+/*Estilos para el Main de las paginas (Mobile)*/
+/*Main de NailArt y Peluquería*/
+.MainPredH {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/*Apartado de informacion que corresponde al resto de paginas que no sean Index (<aside>)*/
-.ApartadoInfoPags {
-    display: flex;
-    justify-content: left;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
-    padding: 10px;
-    font-family: "Oswald", sans-serif;
-}
-
-/*(<ul>)*/
-.SeccionInfo {
-    font-weight: 400;
-}
-
-/*(<h3>)*/
-.SubtitInfo {
-    font-size: 25px;
-    font-weight: 900;
-    animation: animation-subtit 3s infinite;
-}
-
-/*(<p>)*/
-.TextInfo {
-    font-weight: 300;
-    font-size: 15px;
-    transition: color 1.5 linear, font-size 1.5 linear;
+.MainPredH img {
+  max-width: 100%;
+  height: 45vh;
+  padding: 25px;
+  margin-top: 40px;
 }
 
 /*Configuracion para sección de precios de Peluqueria y Arte de Uñas*/
 .MainPredH h3 {
-    color: #825B32;
-    font-family: "Oswald", sans-serif;
-    font-weight: 900;
-    font-size: 20px;
+  color: #825B32;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .MainPredH ul {
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    padding-right: 3.5vh;
-    list-style-type: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  padding-right: 3.5vh;
+  list-style-type: none;
 }
 
-/*Media-Query*/
-/*Para TABLETS*/
-@media (min-width: 600px) {
-* {
-    font-weight: 900;
+/*Main de Manicure y Pedicure*/
+.MainPredV {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 25px;
+  margin-top: 3vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 3vh;
 }
-#TituloIndex {
+
+.MainPredV img {
+  padding-bottom: 2vh;
+  height: 25vh;
+  max-width: 100%;
+}
+
+/*Estilos para apartados de informacion de las paginas*/
+/*Apartado de informacion que corresponde al resto de paginas que no sean Index (<aside>)*/
+.ApartadoInfoPags {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 2vh;
+  margin-top: 3vh;
+  padding: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+/*(<ul>)*/
+.SeccionInfo {
+  font-weight: 400;
+}
+
+/*(<h3>)*/
+.SubtitInfo {
+  font-size: 25px;
+  font-weight: 900;
+  animation: animation-subtit 3s infinite;
+}
+
+/*(<p>)*/
+.TextInfo {
+  font-weight: 300;
+  font-size: 15px;
+  transition: color 1.5 linear, font-size 1.5 linear;
+}
+
+/*Estilos 'Customizados' del Sitio web*/
+.custom-body {
+  background-color: #EDCDBB;
+}
+
+.custom-header {
+  background-color: #E3B7A0;
+}
+
+.custom-main article a img {
+  height: 35vh;
+  width: 35vh;
+  padding-bottom: 3vh;
+  transition: height 1.5 ease, width 1.5 ease;
+}
+
+.custom-main article h2 a {
+  color: #825B32;
+  font-size: 4vh;
+  text-decoration: none;
+  transition: color 1.5 ease, font-size 1.5 ease;
+}
+
+/*TRANSICIONES y TRANSFORMACIONES*/
+.custom-main article h2 a:hover {
+  color: #654520;
+  font-size: 3.5vh;
+}
+
+.TextInfo:hover {
+  color: #ad2020;
+  font-size: 17px;
+}
+
+.custom-main article a img:hover {
+  width: 30vh;
+  height: 30vh;
+}
+
+.FooterGeneral img:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/*@KEYFRAMES*/
+@keyframes animation-subtit {
+  20% {
+    opacity: 100%;
+  }
+  40% {
+    opacity: 80%;
+  }
+  60% {
+    opacity: 65%;
+  }
+  80% {
+    opacity: 80%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/*MediaQuery para TABLETS*/
+@media (min-width: 600px) {
+  * {
+    font-weight: 900;
+  }
+  #TituloIndex {
     width: 100%;
     font-size: 60px;
-}
-.ListNav {
+  }
+  .ListNav {
     font-size: 3vh;
-}
-.MainPredH {
+  }
+  .MainPredH {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 30px;
-}
-.MainPredH img {
+  }
+  .MainPredH img {
     height: 200px;
     width: 300px;
-}
-.MainPredV {
+  }
+  .MainPredV {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
     padding: 0;
-}
-.MainPredV img {
+  }
+  .MainPredV img {
     height: 400px;
     width: 450px;
+  }
 }
-}
-/* Para COMPUTADORAS */
+/*MediaQuery para COMPUTADORAS*/
 @media (min-width: 1024px) {
-#TituloIndex {
+  #TituloIndex {
     width: 100%;
     text-align: center;
     font-size: 100px;
     font-weight: normal;
-}
-.FooterGeneral img {
+  }
+  .FooterGeneral img {
     height: 5vh;
     width: 5vh;
-}
-.MainPredH {
+  }
+  .MainPredH {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 40px;
-}
-.MainPredH img {
+  }
+  .MainPredH img {
     height: 280px;
     width: 280px;
-}
-.MainPredV {
+  }
+  .MainPredV {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
-.MainPredV img {
+  }
+  .MainPredV img {
     height: 450px;
     width: 450px;
-}
-.custom-body header img {
+  }
+  .custom-body header img {
     height: 400px;
     width: 800px;
-}
-}
-/*CUSTOMIZADO*/
-.custom-body {
-    background-color: #EDCDBB;
-}
-
-.custom-header {
-    background-color: #E3B7A0;
-}
-
-.custom-main article a img {
-    height: 35vh;
-    width: 35vh;
-    padding-bottom: 3vh;
-    transition: height 1.5 ease, width 1.5 ease;
-}
-
-.custom-main article h2 a {
-    color: #825B32;
-    font-size: 4vh;
-    text-decoration: none;
-    transition: color 1.5 ease, font-size 1.5 ease;
-}
-
-/* Transiciones */
-.custom-main article h2 a:hover {
-    color: #654520;
-    font-size: 3.5vh;
-}
-
-.TextInfo:hover {
-    color: #ad2020;
-    font-size: 17px;
-}
-
-.custom-main article a img:hover {
-    width: 30vh;
-    height: 30vh;
-}
-
-.FooterGeneral img:hover {
-    transform: scale(1.2) rotate(10deg);
-}
-
-/* Keyframes */
-@keyframes animation-subtit {
-20% {
-    opacity: 100%;
-}
-40% {
-    opacity: 80%;
-}
-60% {
-    opacity: 65%;
-}
-80% {
-    opacity: 80%;
-}
-100% {
-    opacity: 100%;
-}
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

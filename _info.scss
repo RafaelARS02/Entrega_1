@@ -1,0 +1,30 @@
+/*Estilos para apartados de informacion de las paginas*/
+
+/*Apartado de informacion que corresponde al resto de paginas que no sean Index (<aside>)*/
+.ApartadoInfoPags{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+}
+
+/*(<ul>)*/
+.SeccionInfo {
+    font-weight: 400;
+}
+
+/*(<h3>)*/
+.SubtitInfo{
+    font-size: 25px;
+    font-weight: 900;
+    animation: animation-subtit 3s infinite;
+}
+
+/*(<p>)*/
+.TextInfo{
+    font-weight: 300;
+    font-size: 15px;
+    transition: color 1.5 linear, font-size 1.5 linear;
+}
