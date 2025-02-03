@@ -1,22 +1,22 @@
 /*Estilos para Titulos de las paginas (Mobile)*/
 
 /*Titulo de Index*/
-#TituloIndex {
+#titulo-index {
     @extend .titulos;
     font-size: 4.7vh;
     padding: 40px 0;
 }
 
 /*Titulo y Subtitulo de las Paginas de Servicios (No se usa para Index)*/
-.TituloPag {
+.titulo-pag {
     @extend .titulos;
-    font-size: 6vh;
-    padding: 3vh 0;
+    font-size: 10vh;
+    padding: 2vh 0 1vh 0;
 }
 
-.SubPag {
+.sub-pag {
     @extend .titulos;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 //@extend's
@@ -27,4 +27,6 @@
     background-color: $primary-color;
     font-family: "Dancing Script", cursive;
     text-align: center;
+    color: #825B32;
+    text-shadow: 5px 5px 5px $sombra;
 }

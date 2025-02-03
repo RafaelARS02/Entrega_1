@@ -1,0 +1,43 @@
+/*@Mixin*/
+@mixin img ($height, $width){
+    height: $height;
+    width: $width;
+}
+
+@mixin flex($display, $flex-direc, $justify-content, $align-items){
+    display: $display;
+    flex-direction: $flex-direc;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+/*MediaQuery para TABLETS*/
+
+@media (min-width: 600px) {
+    *{
+        font-weight: 900;
+    }
+
+    #titulo-index {
+        width: 100%;
+        font-size: 60px;
+    }
+
+    .main-pred-h {
+        @include flex(flex, row, space-around, center);
+        padding: 30px;
+        img {
+            @include img(200px, 300px);
+        }
+    }
+
+    .main-pred-v {
+        @include flex(flex, column, space-between, center);
+        font-size: 20px;
+        padding: 0;
+        img {
+            @include img(400px, 450px);
+        }
+    }
+}

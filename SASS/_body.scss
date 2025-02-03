@@ -6,16 +6,18 @@
     box-sizing: border-box;
 }
 
-.FooterGeneral{
+.footer-general {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     background-image: radial-gradient(circle, #e4bca4, #d19676);
-}
-
-.FooterGeneral img{
-    height: 4vh;
-    width: 4vh;
-    transition: transform 1.5 ease-in 0.5;
+    color: $pinfo;
+    img {
+        border: 1px solid black;
+        border-radius: 3vh;
+        height: 4vh;
+        width: 4vh;
+        transition: transform 1.5 ease-in 0.5;
+    }
 }

@@ -6,15 +6,17 @@
   box-sizing: border-box;
 }
 
-.FooterGeneral {
+.footer-general {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
   background-image: radial-gradient(circle, #e4bca4, #d19676);
+  color: rgb(97, 60, 35);
 }
-
-.FooterGeneral img {
+.footer-general img {
+  border: 1px solid black;
+  border-radius: 3vh;
   height: 4vh;
   width: 4vh;
   transition: transform 1.5 ease-in 0.5;
@@ -22,64 +24,64 @@
 
 /*Estilos para Titulos de las paginas (Mobile)*/
 /*Titulo de Index*/
-#TituloIndex {
+#titulo-index {
   font-size: 4.7vh;
   padding: 40px 0;
 }
 
 /*Titulo y Subtitulo de las Paginas de Servicios (No se usa para Index)*/
-.TituloPag {
-  font-size: 6vh;
-  padding: 3vh 0;
+.titulo-pag {
+  font-size: 10vh;
+  padding: 2vh 0 1vh 0;
 }
 
-.SubPag {
-  font-size: 3vh;
+.sub-pag {
+  font-size: 4vh;
 }
 
-.titulos, #TituloIndex, .TituloPag, .SubPag {
+.titulos, #titulo-index, .titulo-pag, .sub-pag {
   margin: 0;
   width: 100%;
   font-weight: bold;
   background-color: #EDCDBB;
   font-family: "Dancing Script", cursive;
   text-align: center;
+  color: #825B32;
+  text-shadow: 5px 5px 5px #a78d71;
 }
 
 /*Estilos para el Main de las paginas (Mobile)*/
 /*Main de NailArt y Peluquería*/
-.MainPredH {
+.main-pred-h {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.MainPredH img {
-  max-width: 100%;
+.main-pred-h img {
+  border: 2.5px solid #d19676;
+  border-radius: 25vh 25vh 25vh 0;
   height: 45vh;
-  padding: 25px;
-  margin-top: 40px;
+  max-width: 100%;
+  margin: 40px 0;
 }
-
-/*Configuracion para sección de precios de Peluqueria y Arte de Uñas*/
-.MainPredH h3 {
+.main-pred-h h3 {
   color: #825B32;
   font-family: "Oswald", sans-serif;
   font-weight: 900;
   font-size: 20px;
 }
-
-.MainPredH ul {
+.main-pred-h ul {
   font-family: "Oswald", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   padding-right: 3.5vh;
   list-style-type: none;
+  color: rgb(97, 60, 35);
 }
 
 /*Main de Manicure y Pedicure*/
-.MainPredV {
+.main-pred-v {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,17 +91,20 @@
   margin-top: 3vh;
   font-family: "Oswald", sans-serif;
   font-size: 3vh;
+  color: rgb(97, 60, 35);
 }
-
-.MainPredV img {
+.main-pred-v img {
   padding-bottom: 2vh;
+  border-radius: 5vh;
   height: 25vh;
   max-width: 100%;
+  margin: 0;
 }
 
 /*Estilos para apartados de informacion de las paginas*/
+/*@Mixin*/
 /*Apartado de informacion que corresponde al resto de paginas que no sean Index (<aside>)*/
-.ApartadoInfoPags {
+.apartado-info-pags {
   display: flex;
   justify-content: left;
   margin-bottom: 2vh;
@@ -109,21 +114,25 @@
 }
 
 /*(<ul>)*/
-.SeccionInfo {
+.seccion-info {
   font-weight: 400;
+  font-size: normal;
+  color: rgb(97, 60, 35);
 }
 
 /*(<h3>)*/
-.SubtitInfo {
-  font-size: 25px;
+.subtit-info {
   font-weight: 900;
+  font-size: 25px;
+  color: #825B32;
   animation: animation-subtit 3s infinite;
 }
 
 /*(<p>)*/
-.TextInfo {
-  font-weight: 300;
+.info-text {
+  font-weight: 400;
   font-size: 15px;
+  color: black;
   transition: color 1.5 linear, font-size 1.5 linear;
 }
 
@@ -139,7 +148,9 @@
 .custom-main article a img {
   height: 35vh;
   width: 35vh;
-  padding-bottom: 3vh;
+  border: 2.5px solid #d19676;
+  border-radius: 17.5vh 0;
+  margin-bottom: 3vh;
   transition: height 1.5 ease, width 1.5 ease;
 }
 
@@ -156,8 +167,8 @@
   font-size: 3.5vh;
 }
 
-.TextInfo:hover {
-  color: #ad2020;
+.info-text:hover {
+  color: brown;
   font-size: 17px;
 }
 
@@ -166,7 +177,7 @@
   height: 30vh;
 }
 
-.FooterGeneral img:hover {
+.footer-general img:hover {
   transform: scale(1.2) rotate(10deg);
 }
 
@@ -188,29 +199,28 @@
     opacity: 100%;
   }
 }
+/*@Mixin*/
 /*MediaQuery para TABLETS*/
 @media (min-width: 600px) {
   * {
     font-weight: 900;
   }
-  #TituloIndex {
+  #titulo-index {
     width: 100%;
     font-size: 60px;
   }
-  .ListNav {
-    font-size: 3vh;
-  }
-  .MainPredH {
+  .main-pred-h {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding: 30px;
   }
-  .MainPredH img {
+  .main-pred-h img {
     height: 200px;
     width: 300px;
   }
-  .MainPredV {
+  .main-pred-v {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -218,40 +228,46 @@
     font-size: 20px;
     padding: 0;
   }
-  .MainPredV img {
+  .main-pred-v img {
     height: 400px;
     width: 450px;
   }
 }
+/*@Mixin*/
 /*MediaQuery para COMPUTADORAS*/
 @media (min-width: 1024px) {
-  #TituloIndex {
+  #titulo-index {
     width: 100%;
     text-align: center;
     font-size: 100px;
     font-weight: normal;
   }
-  .FooterGeneral img {
+  .footer-general {
+    color: #eadad1;
+    text-shadow: 5px 5px 5px black;
+  }
+  .footer-general img {
     height: 5vh;
     width: 5vh;
   }
-  .MainPredH {
+  .main-pred-h {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding: 40px;
   }
-  .MainPredH img {
+  .main-pred-h img {
     height: 280px;
     width: 280px;
   }
-  .MainPredV {
+  .main-pred-v {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  .MainPredV img {
+  .main-pred-v img {
     height: 450px;
     width: 450px;
   }

@@ -1,7 +1,14 @@
 /*Estilos para apartados de informacion de las paginas*/
 
+/*@Mixin*/
+@mixin info($font-wg, $font-sz, $color){
+    font-weight: $font-wg;
+    font-size: $font-sz;
+    color: $color;
+}
+
 /*Apartado de informacion que corresponde al resto de paginas que no sean Index (<aside>)*/
-.ApartadoInfoPags{
+.apartado-info-pags {
     display: flex;
     justify-content: left;
     margin-bottom: 2vh;
@@ -11,20 +18,18 @@
 }
 
 /*(<ul>)*/
-.SeccionInfo {
-    font-weight: 400;
+.seccion-info {
+    @include info(400, normal, $pinfo);
 }
 
 /*(<h3>)*/
-.SubtitInfo{
-    font-size: 25px;
-    font-weight: 900;
+.subtit-info {
+    @include info(900, 25px, $titinfo);
     animation: animation-subtit 3s infinite;
 }
 
 /*(<p>)*/
-.TextInfo{
-    font-weight: 300;
-    font-size: 15px;
+.info-text {
+    @include info(400, 15px, black );
     transition: color 1.5 linear, font-size 1.5 linear;
 }

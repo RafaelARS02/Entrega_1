@@ -11,7 +11,9 @@
 .custom-main article a img{
     height: 35vh;
     width: 35vh;
-    padding-bottom: 3vh;
+    border: 2.5px solid #d19676;
+    border-radius: 17.5vh 0;
+    margin-bottom: 3vh;
     transition: height 1.5 ease, width 1.5 ease;
 }
 

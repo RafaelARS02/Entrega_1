@@ -1,0 +1,53 @@
+/*Estilos para el Main de las paginas (Mobile)*/
+
+//@mixin
+@mixin main($dflex, $fdirection, $jcontent, $aitems, $talign){
+    display: $dflex;
+    flex-direction: $fdirection;
+    justify-content: $jcontent;
+    align-items: $aitems;
+    text-align: $talign;
+}
+
+@mixin main-img ($border-r, $height, $max-width, $margin){
+    border-radius: $border-r;
+    height: $height;
+    max-width: $max-width;
+    margin: $margin;
+}
+
+/*Main de NailArt y Peluquería*/
+.main-pred-h {
+    @include main(flex, column, center, center, center);
+    img {
+        border: 2.5px solid #d19676;
+        @include main-img(25vh 25vh 25vh 0, 45vh, 100%, 40px 0);
+    }
+        h3 {
+            color: #825B32;
+            font-family: "Oswald", sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+        }
+            ul{
+                font-family: "Oswald", sans-serif;
+                font-weight: 500;
+                padding-right: 3.5vh;
+                list-style-type: none;
+                color: $pinfo;
+            }
+}
+
+/*Main de Manicure y Pedicure*/
+.main-pred-v {
+    @include main(flex, column, center, center, left);
+    padding: 25px;
+    margin-top: 3vh;
+    font-family: "Oswald", sans-serif;
+    font-size: 3vh;
+    color: $pinfo;
+        img {
+            padding-bottom: 2vh;
+            @include main-img(5vh, 25vh, 100%, 0);
+        }
+}
