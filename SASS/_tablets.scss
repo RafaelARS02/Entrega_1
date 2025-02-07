@@ -27,8 +27,9 @@
     .main-pred-h {
         @include flex(flex, row, space-around, center);
         padding: 30px;
+        gap: 20px;
         img {
-            @include img(200px, 300px);
+            @include img(250px, 300px);
         }
     }
 
@@ -39,5 +40,31 @@
         img {
             @include img(400px, 450px);
         }
+    }
+
+    .main-pred-h-grill {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 50px;
+        font-size: 20px;
+        padding: 30px;
+        img {
+            @include img(300px, 350px);
+        }
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    .subtit-info {
+        font-size: 30px;
+    }
+
+    .seccion-info {
+        font-size: 20px;
+    }
+
+    .info-text {
+        font-size: 15px;
     }
 }

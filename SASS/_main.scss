@@ -51,3 +51,30 @@
             @include main-img(5vh, 25vh, 100%, 0);
         }
 }
+
+/*Grillas para la pagina de Peluquería*/
+.main-pred-h-grill {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    img {
+        border: 2.5px solid #d19676;
+        @include main-img(25vh 25vh 25vh 0, 45vh, 100%, 40px 0);
+    }
+        h3 {
+            color: #825B32;
+            font-family: "Oswald", sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+            text-align: center;
+        }
+            ul{
+                font-family: "Oswald", sans-serif;
+                font-weight: 500;
+                padding-right: 3.5vh;
+                list-style-type: none;
+                color: $pinfo;
+                text-align: center;
+            }
+}

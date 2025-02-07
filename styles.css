@@ -101,6 +101,36 @@
   margin: 0;
 }
 
+/*Grillas para la pagina de Peluquería*/
+.main-pred-h-grill {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.main-pred-h-grill img {
+  border: 2.5px solid #d19676;
+  border-radius: 25vh 25vh 25vh 0;
+  height: 45vh;
+  max-width: 100%;
+  margin: 40px 0;
+}
+.main-pred-h-grill h3 {
+  color: #825B32;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+}
+.main-pred-h-grill ul {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  padding-right: 3.5vh;
+  list-style-type: none;
+  color: rgb(97, 60, 35);
+  text-align: center;
+}
+
 /*Estilos para apartados de informacion de las paginas*/
 /*@Mixin*/
 /*Apartado de informacion que corresponde al resto de paginas que no sean Index (<aside>)*/
@@ -143,6 +173,10 @@
 
 .custom-header {
   background-color: #E3B7A0;
+}
+
+.custom-main {
+  gap: 20px;
 }
 
 .custom-main article a img {
@@ -215,9 +249,10 @@
     justify-content: space-around;
     align-items: center;
     padding: 30px;
+    gap: 20px;
   }
   .main-pred-h img {
-    height: 200px;
+    height: 250px;
     width: 300px;
   }
   .main-pred-v {
@@ -232,6 +267,29 @@
     height: 400px;
     width: 450px;
   }
+  .main-pred-h-grill {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 50px;
+    font-size: 20px;
+    padding: 30px;
+  }
+  .main-pred-h-grill img {
+    height: 300px;
+    width: 350px;
+  }
+  .main-pred-h-grill h3 {
+    font-size: 30px;
+  }
+  .subtit-info {
+    font-size: 30px;
+  }
+  .seccion-info {
+    font-size: 20px;
+  }
+  .info-text {
+    font-size: 15px;
+  }
 }
 /*@Mixin*/
 /*MediaQuery para COMPUTADORAS*/
@@ -245,6 +303,7 @@
   .footer-general {
     color: #eadad1;
     text-shadow: 5px 5px 5px black;
+    padding: 5.5px;
   }
   .footer-general img {
     height: 5vh;
@@ -274,6 +333,18 @@
   .custom-body header img {
     height: 400px;
     width: 800px;
+  }
+  .main-pred-h-grill {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+    column-gap: 30px;
+    padding: 40px;
+  }
+  .main-pred-h-grill img {
+    height: 280px;
+    width: 280px;
   }
 }
 

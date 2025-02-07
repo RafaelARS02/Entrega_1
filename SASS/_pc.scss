@@ -24,6 +24,7 @@
     .footer-general{
         color: #eadad1;
         text-shadow: 5px 5px 5px black;
+        padding: 5.5px;
         img {
             @include img(5vh, 5vh);
         }
@@ -46,5 +47,17 @@
 
     .custom-body header img {
     @include img(400px, 800px);
+    }
+
+    .main-pred-h-grill {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        justify-items: center;
+        align-items: center;
+        column-gap: 30px;
+        padding: 40px;
+        img {
+            @include img(280px, 280px);
+        }
     }
 }
